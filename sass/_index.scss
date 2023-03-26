@@ -1,0 +1,239 @@
+@use "variables";
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+}
+.contenedorPadre{
+    display: grid;
+    grid-template-areas:
+    "header header header header"
+    "hero hero hero hero"
+    "boxes boxes boxes boxes"
+    "footer footer footer footer";
+    grid-template-columns: 100%;
+}
+/* ------------ HEADER ------------ */
+header {
+    grid-area: header;
+    background-color: variables.$blue;
+    background-image: variables.$pttA;
+    background-repeat: repeat;
+    background-size: 100%;
+    color: variables.$white;
+    padding: 0px 3vh 0px 3vh;
+    min-height: 10vh;
+    box-shadow: variables.$boxShadow;
+        li {
+            display:inline-block;
+            padding: 0px 20px;
+        }
+    .logo_header {
+        padding: 20px 5px 5px 35px;
+        height: 8vh;
+    }
+}
+/* ------------ HERO BANNER ------------ */
+.hero_container {
+grid-area: hero;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-wrap: wrap;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+box-shadow: variables.$sectionShadow;
+min-height: 90vh;
+    .hero {
+        width: 70%;
+        text-align: center;
+    }
+}
+#hero-home{
+    background-image: variables.$heroOverlay, url("../img/hero.jpg");
+}
+/* ------------ CONTENIDO DEL SITIO ------------ */
+.content {
+    background-image: variables.$white;
+    background-image: variables.$pttB;
+    background-size: 50%;
+    background-repeat: repeat;
+    .boxes {
+        grid-area: boxes;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 5vh 0px 5vh 0px;
+        .box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            width: 33vh;
+            min-height: 33vh;
+            background-color: variables.$blue;
+            background-image: variables.$pttC;
+            background-size: 300%;
+            box-shadow: variables.$boxShadow;
+            color: variables.$white;
+            text-align: center;
+            border-radius: 5px;
+            padding: 1vh 2vh 1vh 2vh;
+            margin: 2%;
+        }
+    }
+}
+.boxText {
+    width: 95vh;
+    background-color: #130f40;
+    background-image: variables.$pttC;
+    background-size: 300vh;
+    box-shadow: variables.$boxShadow;
+    color: variables.$white;
+    border-radius: 5px;
+    padding: 1vh 1vh 4vh 1vh;
+    margin: 1%;
+}
+.box-foto{
+    border-radius: 5px;
+    width: 30vh;
+    margin: 5px;
+}
+/* ------------ ESILOS DEL TEXTO ------------ */
+.heroText{
+    font-family: variables.$Righteous;
+    color: variables.$white;
+    font-weight: bold;
+    font-size: 6vh;
+    text-align: center;
+    font-stretch: expanded;
+}
+.frase{
+    font-family: variables.$Raleway;
+    color: variables.$white;
+    font-weight: 100;
+    font-size: 4vh;
+    font-style: italic;
+    text-align: center;
+    font-stretch: expanded;
+}
+/* ------------ ESTILO DE TITULOS ------------ */
+h1{
+    font-family: variables.$Raleway;
+    font-weight: bold;
+    font-size: 5vh;
+    font-stretch: expanded;
+}
+h2{
+    font-family: variables.$Raleway;
+    font-weight: bold;
+    font-size: 4vh;
+}
+h3{
+    font-family: variables.$Raleway;
+    font-weight: 200;
+    font-weight: bold;
+    font-size: 2vh;
+}
+h4{
+    font-family: variables.$Raleway;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 1.5vh;
+}
+h5{
+    font-family: variables.$Raleway;
+    font-weight: 400;
+    font-size: 1.5vh;
+}
+/* ------------ BOTONES Y LINK ------------ */
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: variables.$red;
+    border: none;
+    border-radius: 5px;
+    color: variables.$white;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+        &:hover{
+            background-color:variables.$white;
+            box-shadow: variables.$buttonShadow;
+            color: variables.$red;
+            font-weight: 600;
+    }
+}
+.heroButtonContainer{
+    display: flex;
+    justify-content: center;
+    .button-hero{
+        background-image: variables.$pttA;
+        background-repeat: repeat;
+        background-size: 90vh;
+        margin: 1vh;
+        width: 20vh;
+        height: 6vh;
+    }
+}
+.button-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 11vh;
+    border-radius: 3px;
+}
+a:link {
+    text-decoration: none;
+    font-family: variables.$Raleway;
+    font-weight: 300;
+    font-size: 1.8vh;
+    color: variables.$white;
+        &:visited {
+            color: variables.$red;
+        }
+        &:hover {
+        color: variables.$red;
+        font-weight: 400;
+        }
+        &:active {
+            color: variables.$blue;
+        }
+}
+/* ------------ ESTILOS DE FOOTER ------------ */
+footer {
+    grid-area: footer;
+    background-color: variables.$blue;
+    background-image: variables.$pttA;
+    color: variables.$white;
+}
+.pie {
+    padding: 15px 15px 15px 15px;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1vh;
+}
+.direccion {
+    display: block;
+    text-align: center;
+}
+.direccionFoto{
+    background-image: url(../img/local.jpg);
+    width: 280px;
+    height: 150px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+.map{
+    border-radius: 5px;
+    width: 280px;
+    height: 150px;
+    margin-bottom: 15px;
+}

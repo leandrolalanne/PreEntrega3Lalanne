@@ -54,6 +54,10 @@ header .logo_header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/hero.jpg");
 }
 
+#hero-contacto {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/contacto.jpg");
+}
+
 /* ------------ CONTENIDO DEL SITIO ------------ */
 .content {
   background-image: #f5f6fa;
@@ -213,7 +217,7 @@ a:link:visited {
 }
 a:link:hover {
   color: #d63031;
-  font-weight: 400;
+  font-weight: 600;
 }
 a:link:active {
   color: #130f40;
@@ -256,42 +260,9 @@ footer {
   margin-bottom: 15px;
 }
 
-/* ------------ NOS HERO ------------ */
-#hero-nos {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/nosotros.jpg");
-}
-
-#boxNos {
-  width: 75vw;
-  margin: 1vh 0px 1vh 0px;
-}
-
-/* ------------ MENU HERO ------------ */
-#hero-menu {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/menu-hero.jpg");
-}
-
-#menu-box {
-  width: 95vh;
-  margin: 1vh 0px 1vh 0px;
-}
-
-/* ------------ RESERVAS HERO ------------ */
-#hero-reservas {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/reservas.jpg");
-}
-
-#menu-box {
-  width: 95vw;
-  margin: 1vh 0px 1vh 0px;
-}
-
-/* ------------ CONTACTO HERO ------------ */
-#hero-contacto {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/contacto.jpg");
-}
-
+/* ------------ -------------- ------------ */
 /* ------------ MEDIA QUERRIES ------------ */
+/* ------------ -------------- ------------ */
 @media (max-width: 600px) {
   .hero {
     width: 95%;
@@ -390,5 +361,37 @@ footer {
     color: #f5f6fa;
   }
 }
+/* ------------ VARIABLES ------------ */
+/* ------------ HERO ------------ */
+#hero-menu {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/menu-hero.jpg");
+}
 
-/*# sourceMappingURL=estilos.css.map */
+#menu-box {
+  width: 95vh;
+  margin: 1vh 0px 1vh 0px;
+}
+
+/* ------------ VARIABLES ------------ */
+/* ------------ HERO ------------ */
+#hero-nos {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/nosotros.jpg");
+}
+
+#boxNos {
+  width: 95vh;
+  margin: 1vh 0px 1vh 0px;
+}
+
+/* ------------ VARIABLES ------------ */
+/* ------------ HERO ------------ */
+#hero-reservas {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/reservas.jpg");
+}
+
+#menu-box {
+  width: 95vh;
+  margin: 1vh 0px 1vh 0px;
+}
+
+/*# sourceMappingURL=estilos.scss.map */

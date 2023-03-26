@@ -1,0 +1,9 @@
+@use "variables";
+/* ------------ MENU HERO ------------ */
+#hero-menu{
+    background-image: variables.$heroOverlay, url("../img/menu-hero.jpg");
+}
+#menu-box{
+    width: 95vh;
+    margin: 1vh 0px 1vh 0px;
+}

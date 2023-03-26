@@ -1,0 +1,5 @@
+@use "variables";
+/* ------------ CONTACTO HERO ------------ */
+#hero-contacto{
+    background-image: variables.$heroOverlay, url("../img/contacto.jpg");
+}

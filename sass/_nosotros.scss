@@ -1,0 +1,9 @@
+@use "variables";
+/* ------------ NOS HERO ------------ */
+#hero-nos{
+    background-image: variables.$heroOverlay, url("../img/nosotros.jpg");
+}
+#boxNos{
+    width: 75vw;
+    margin: 1vh 0px 1vh 0px;
+}

@@ -1,0 +1,9 @@
+@use "variables";
+/* ------------ RESERVAS HERO ------------ */
+#hero-reservas{
+    background-image: variables.$heroOverlay, url("../img/reservas.jpg");
+}
+#menu-box{
+    width: 95vw;
+    margin: 1vh 0px 1vh 0px;
+}
